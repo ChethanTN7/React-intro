@@ -1,4 +1,5 @@
 import "./App.css";
+import FunctionComponent from "./components/FunctionComponents";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>Hello world </p>
       </header>
+      <FunctionComponent />
     </div>
   );
 }
