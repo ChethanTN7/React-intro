@@ -1,15 +1,14 @@
 import "./App.css";
 import FunctionComponent from "./components/FunctionComponents";
+import { Routes, Route } from "react-router-dom";
+// HOC layouts
+import BaseHoc from "./hoc/BaseHoc";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>Hello world </p>
-      </header>
-      <FunctionComponent />
-    </div>
+    <Routes>
+      <Route path="/func" element={<BaseHoc><FunctionComponent /></BaseHoc>}></Route>
+    </Routes>
   );
 }
 
