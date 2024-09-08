@@ -1,8 +1,9 @@
 import React, {useState} from "react";
+import BaseHoc from "../hoc/BaseHoc";
 
 const FunctionComponent = () =>{
     const [count, setCount] = useState(0);
-    const [name, setName] = useState("Name")
+    const [name, setName] = useState("Unknown")
     const reduceCount = () =>{
         setCount(count - 1);
     }
@@ -20,4 +21,4 @@ const FunctionComponent = () =>{
     )
 }
 
-export default FunctionComponent;
+export default BaseHoc(FunctionComponent);
